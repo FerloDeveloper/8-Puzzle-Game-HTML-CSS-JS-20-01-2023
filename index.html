@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>8 Puzzle</title>
+</head>
+
+<body>
+
+    <body>
+        <h1 onmouseover="setColor()">8 Puzzle</h1>
+        <!-- Qui apparira' il conteggio delle mosse dopo il primo click valido -->
+        <h2 class="counter">Questo testo non lo vedra' mai nessuno</h2>
+        <div class="container">
+            <div id="puzzle">
+                <!-- Caselle -->
+                <button id="c0" class="tiles" onclick="pushed(this.id)"> </button>
+                <button id="c1" class="tiles" onclick="pushed(this.id)">1</button>
+                <button id="c2" class="tiles" onclick="pushed(this.id)">2</button>
+                <button id="c3" class="tiles" onclick="pushed(this.id)">3</button>
+                <button id="c4" class="tiles" onclick="pushed(this.id)">4</button>
+                <button id="c5" class="tiles" onclick="pushed(this.id)">5</button>
+                <button id="c6" class="tiles" onclick="pushed(this.id)">6</button>
+                <button id="c7" class="tiles" onclick="pushed(this.id)">7</button>
+                <button id="c8" class="tiles" onclick="pushed(this.id)">8</button>
+            </div>
+            <br />
+            <!-- Restart button -->
+            <button class="btn-restart" onclick="randomTiles()">NUOVA PARTITA</button>
+        </div>
+        <script src="game.js"></script>
+    </body>
+
+</html>
+</body>
+
+</html>
